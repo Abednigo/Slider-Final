@@ -86,7 +86,7 @@ public class Buttons extends javax.swing.JFrame {
         });
 
         Slider2.setMajorTickSpacing(1);
-        Slider2.setMaximum(5);
+        Slider2.setMaximum(8);
         Slider2.setMinimum(1);
         Slider2.setPaintLabels(true);
         Slider2.setPaintTicks(true);
@@ -94,7 +94,7 @@ public class Buttons extends javax.swing.JFrame {
         Slider2.setValue(1);
 
         Slider4.setMajorTickSpacing(1);
-        Slider4.setMaximum(5);
+        Slider4.setMaximum(8);
         Slider4.setMinimum(1);
         Slider4.setMinorTickSpacing(1);
         Slider4.setPaintLabels(true);
@@ -103,7 +103,7 @@ public class Buttons extends javax.swing.JFrame {
         Slider4.setValue(1);
 
         Slider1.setMajorTickSpacing(1);
-        Slider1.setMaximum(5);
+        Slider1.setMaximum(8);
         Slider1.setMinimum(1);
         Slider1.setPaintLabels(true);
         Slider1.setPaintTicks(true);
@@ -112,7 +112,7 @@ public class Buttons extends javax.swing.JFrame {
         Slider1.setValue(1);
 
         Slider3.setMajorTickSpacing(1);
-        Slider3.setMaximum(5);
+        Slider3.setMaximum(8);
         Slider3.setMinimum(1);
         Slider3.setPaintLabels(true);
         Slider3.setPaintTicks(true);
@@ -135,6 +135,7 @@ public class Buttons extends javax.swing.JFrame {
         });
 
         Submit.setText("Submit");
+        Submit.setEnabled(false);
         Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SubmitActionPerformed(evt);
@@ -262,6 +263,7 @@ public class Buttons extends javax.swing.JFrame {
         double avg1=avg/4;
         String op=String.valueOf(avg1);
         output.setText(op);
+        Submit.setEnabled(true);
         
         //System.out.println();
         //System.out.println(avg1);
@@ -275,6 +277,7 @@ public class Buttons extends javax.swing.JFrame {
        Slider2.setValue(1);
        Slider3.setValue(1);
        Slider4.setValue(1);
+       Submit.setEnabled(false);
      
     }//GEN-LAST:event_ClearActionPerformed
 
@@ -288,7 +291,7 @@ public class Buttons extends javax.swing.JFrame {
             as2.setOverallscore(Slider4.getValue());
             as2.setAveragescore(output.getText());
             as2.setComments(CommentBox.getText());
-            
+             
             EntityManagerFactory emf=Persistence.createEntityManagerFactory("Asg2");
             Assign2JpaController ajc=new Assign2JpaController(emf);
              

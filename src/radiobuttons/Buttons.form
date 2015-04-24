@@ -198,7 +198,7 @@
     <Component class="javax.swing.JSlider" name="Slider2">
       <Properties>
         <Property name="majorTickSpacing" type="int" value="1"/>
-        <Property name="maximum" type="int" value="5"/>
+        <Property name="maximum" type="int" value="8"/>
         <Property name="minimum" type="int" value="1"/>
         <Property name="paintLabels" type="boolean" value="true"/>
         <Property name="paintTicks" type="boolean" value="true"/>
@@ -209,7 +209,7 @@
     <Component class="javax.swing.JSlider" name="Slider4">
       <Properties>
         <Property name="majorTickSpacing" type="int" value="1"/>
-        <Property name="maximum" type="int" value="5"/>
+        <Property name="maximum" type="int" value="8"/>
         <Property name="minimum" type="int" value="1"/>
         <Property name="minorTickSpacing" type="int" value="1"/>
         <Property name="paintLabels" type="boolean" value="true"/>
@@ -221,7 +221,7 @@
     <Component class="javax.swing.JSlider" name="Slider1">
       <Properties>
         <Property name="majorTickSpacing" type="int" value="1"/>
-        <Property name="maximum" type="int" value="5"/>
+        <Property name="maximum" type="int" value="8"/>
         <Property name="minimum" type="int" value="1"/>
         <Property name="paintLabels" type="boolean" value="true"/>
         <Property name="paintTicks" type="boolean" value="true"/>
@@ -233,7 +233,7 @@
     <Component class="javax.swing.JSlider" name="Slider3">
       <Properties>
         <Property name="majorTickSpacing" type="int" value="1"/>
-        <Property name="maximum" type="int" value="5"/>
+        <Property name="maximum" type="int" value="8"/>
         <Property name="minimum" type="int" value="1"/>
         <Property name="paintLabels" type="boolean" value="true"/>
         <Property name="paintTicks" type="boolean" value="true"/>
@@ -279,6 +279,7 @@
     <Component class="javax.swing.JButton" name="Submit">
       <Properties>
         <Property name="text" type="java.lang.String" value="Submit"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SubmitActionPerformed"/>
